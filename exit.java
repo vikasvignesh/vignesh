@@ -7,7 +7,7 @@ public class Ew {
 		Scanner s=new Scanner(System.in);
    char c;
    c=s.next().charAt(0);
-   if(c=='q'){
+   if(c=='Q'){
 	   System.exit(0);
    }else{
 	   System.out.println("program does not exit ");
