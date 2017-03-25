@@ -22,5 +22,8 @@ for(i=0;i<a.length();i++){
 }
 if(flag){
 	System.out.println("\nvowel removed");
+}else
+{
+	System.out.println("\n no vowel removed");
 }
 }}
