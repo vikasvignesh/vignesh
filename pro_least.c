@@ -8,6 +8,9 @@ scanf("%s",num);
 printf("Enter the number element to delete\n");
 scanf("%d",&del);
 l=strlen(num);
+if(del>l){
+    printf("enter number below %d\n ",l);
+}
 for(i=0;i<l;i++){
         for(j=i+1;j<l;j++){
     if(num[i]>num[j]){
