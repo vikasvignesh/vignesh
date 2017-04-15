@@ -3,6 +3,8 @@
 int main(){
 int i,j,n,arr[30][30],max=-9,*sum,tsum=0;
 scanf("%d",&n);
+if(n!=0){
+
 sum=(int *)malloc(sizeof(int)*n);
 for(i=0;i<n;i++){
     for(j=0;j<=i;j++){
@@ -31,6 +33,9 @@ for(i=0;i<n;i++){
     else printf("+");
 }
 printf("=%d",tsum);
-
+}
+else{
+    printf("Invalid input");
+}
 return 0;
 }
