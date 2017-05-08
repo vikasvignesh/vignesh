@@ -3,9 +3,9 @@ import java.util.*;
 public class Subset {
 	  static int substr(int t1[],int t2[]){
 		  int i,j,c=0;
-		 for(i=0;i<t2.length;i++){
-			 for(j=0;j<t1.length;j++){
-				 if(t1[j]==t2[i]){
+		 for(i=0;i<t1.length;i++){
+			 for(j=0;j<t2.length;j++){
+				 if(t2[j]==t1[i]){
 					 c++;
 					 break;
 				 }
