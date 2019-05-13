@@ -1,0 +1,65 @@
+﻿@{
+
+    string contentpath = System.Configuration.ConfigurationManager.AppSettings["ContentPath"] != null ? System.Configuration.ConfigurationManager.AppSettings["ContentPath"].ToString() : string.Empty;
+    int i = 0;
+}
+
+<div class="rightcontainer" style="background-color:#F9F9F9;margin-top: -7px;">
+    <div><lable class="DailyReports leftTitle">My Premium Features</lable></div>
+    <div class="Homeoption" id="Export" >
+        <img src="@(contentpath)/Image/my-experts-gray.svg" width="20px" height="10px"/>
+        <label style="padding-left: 7px; font-size: 12px;"> My Exports </label>
+        <img src="@(contentpath)/Image/arrowdown.svg" width="8px" height="8px" class="arrowleft" />
+       
+    </div>
+    <div class="Premiumline"></div>
+    <div class="Homeoption" id="Savereports">
+        <img src="@(contentpath)/Image/my-saved-report.svg" width="20px" height="10px" />
+        <label style="padding-left: 7px; font-size: 12px;"> My Saved Reports</label>
+        <img src="@(contentpath)/Image/arrowdown.svg" width="8px" height="8px" class="arrowleft" />
+      
+    </div>
+    <div class="Premiumline"></div>
+    <div class="Homeoption" id="comments" style="margin-bottom: 32px;">
+        <img src="@(contentpath)/Image/my-comments.svg" width="20px" height="10px"  />
+        <label style="padding-left: 7px; font-size: 12px;"> My Comments</label>
+        <img src="@(contentpath)/Image/arrowdown.svg" width="8px" height="8px" class="arrowleft" />
+     
+    </div>
+    <div  style="margin-bottom:20px; margin-top: 13px !important;"><lable class="DailyReports leftTitle clear">Our Leading Experts</lable></div>
+    @for (i = 0; i <=2; i++)
+    {
+        <div class="Export">
+           
+                <img src="@(contentpath)/Image/user3.png" width="50px" height="50px" />
+                <img src="@(contentpath)/Image/user-2.svg" width="20px" height="20px" class="profile">
+            
+            <div class="leadingexpert">
+                <label style="font-size: 11px;"> Peter Smichel </label>
+            </div>
+            <div class="leadingexpert-margin">
+                <label style="color:#E25304;font-size: 8px;padding-left: 28px;">120 OPINIONS</label>
+                <label style="font-size: 9px;padding-left: 16px;">500 FOLLOWERS </label>
+            </div>
+        </div>
+        if (i != 2)
+        {
+            <div class="Experts-line" ></div>
+        }
+    }
+
+
+ 
+    <div style="margin-bottom:20px; margin-top: 30px !important;"><lable class="DailyReports leftTitle">Latest Forum Disccusions</lable></div>
+    @for (i = 0; i <3; i++)
+    {
+    <div class="Export" style="margin-top: 12px !important;">
+        <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /> <label style="font-size: 8px;">21 MAR,2019</label>
+        <div style="font-size: 13px;font-weight: bold;">plastics from plants:"We might create a new industry,"says microbe engineer</div>
+        <label style="font-size: 8px !important; font-family: 'latoblack' !important;">22 COMMENT(S)</label>
+    </div>
+    }
+  
+    <div class="viewallbox">View all Discussions</div>
+</div>
+

@@ -1,0 +1,469 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string contentpath = System.Configuration.ConfigurationManager.AppSettings["ContentPath"] != null ? System.Configuration.ConfigurationManager.AppSettings["ContentPath"].ToString() : string.Empty;
+    int i = 0;
+    int j = 0;
+}
+<!DOCTYPE html>
+<html>
+<head>
+<link href="@(contentpath)/css/Common.css" rel="stylesheet"  type="text/css" />
+         <link href="@(contentpath)/css/Home.css" rel="stylesheet" />
+         <link href="@(contentpath)/css/stylesheet.css" rel="stylesheet" />
+         <script src="@(contentpath)/Js/jquery-1.10.2.js"></script>
+         <script src="@(contentpath)/Js/Home.js"></script>
+    <title>Packaging Insights</title>
+</head>
+<body>
+   
+    <div id="container">
+
+        <div class="Leftcontainer" id="frontpage">
+            <div style="float:left">
+                <div class="Title">
+                    <label class="TopHeading"> Daily Packaging Reports</label>
+                    <label class="ViewallReports"> View all Reports</label>
+
+                </div>
+
+                <div class="TitleLine">
+
+                </div>
+
+
+                <div class="Reports">
+
+                   @for (i = 0; i < 4; i++)
+                   {
+                    <div class="contentdiv">
+
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" /> </label>
+                        </div>
+                        <div class="ReportsTitle">
+                            Drink the rainbow: Evian reveals Virgil Abloh Limited-edition bottles
+                        </div>
+                        <div class="Authordetais">
+                            <label><img src="@(contentpath)/Image/user1.png" width="20px" height="20px" /></label>
+                            <label style="font-size:12px;">Peter  Smichel</label>
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px;" />
+                            <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            <label style="margin-left: 20px;font-size: 9px;color: #E25304;font-family: 'latoblack';">
+                                <img src="@(contentpath)/Image/my-experts-orange.svg" width="15px" height="15px" style="margin-right: 5px;margin-top: -5px;" />
+                                22 EXPERT COMMENR(S)
+                            </label>
+
+                        </div>
+                    </div>
+                   }
+                   @*<div class="contentdiv">
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" /> </label>
+                        </div>
+                        <div class="ReportsTitle">
+                            Drink the rainbow: Evian reveals Virgil Abloh Limited-edition bottles
+                        </div>
+                        <div class="Authordetais">
+                            <label><img src="@(contentpath)/Image/user1.png" width="20px" height="20px" /></label>
+                            <label style="font-size:12px;">Peter  Smichel</label>
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px;" />
+                            <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            <label style="margin-left: 20px;font-size: 9px;color: #E25304;font-family: 'latoblack';">
+                                <img src="@(contentpath)/Image/my-experts-orange.svg" width="15px" height="15px" style="margin-right: 5px;margin-top: -5px;" />
+                                22 EXPERT COMMENR(S)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contentdiv">
+
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" /> </label>
+                        </div>
+                        <div class="ReportsTitle">
+                            Drink the rainbow: Evian reveals Virgil Abloh Limited-edition bottles
+                        </div>
+                        <div class="Authordetais">
+                            <label><img src="@(contentpath)/Image/user1.png" width="20px" height="20px" /></label>
+                            <label style="font-size:12px;">Peter  Smichel</label>
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px;" />
+                            <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            <label style="margin-left: 20px;font-size: 9px;color: #E25304;font-family: 'latoblack';">
+                                <img src="@(contentpath)/Image/my-experts-orange.svg" width="15px" height="15px" style="margin-right: 5px;margin-top: -5px;" />
+                                22 EXPERT COMMENR(S)
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="contentdiv" style="margin-bottom:50px;">
+
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" /> </label>
+                        </div>
+                        <div class="ReportsTitle">
+                            Drink the rainbow: Evian reveals Virgil Abloh Limited-edition bottles
+                        </div>
+                        <div class="Authordetais">
+                            <label><img src="@(contentpath)/Image/user1.png" width="20px" height="20px" /></label>
+                            <label style="font-size:12px;">Peter  Smichel</label>
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px;" />
+                            <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            <label style="margin-left: 20px;font-size: 9px;color: #E25304;font-family: 'latoblack';">
+                                <img src="@(contentpath)/Image/my-experts-orange.svg" width="15px" height="15px" style="margin-right: 5px;margin-top: -5px;" />
+                                22 EXPERT COMMENR(S)
+                            </label>
+
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <div class="Title">
+                    <label class="TopHeading"> New packaging  Innovations</label>
+                    <label class="ViewallReports"> Packaging  Innovations</label>
+
+                </div>
+
+                <div class="TitleLine">
+
+                </div>
+                <div class="Innovation">
+                    <div class="Packagingdetails" style="margin-left: 24px;">
+                        <img src="@(contentpath)/Image/img1.jpg" width="295px;" />
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float:right;">
+                                <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                            </label>
+                        </div>
+                        <div class="InnovationTitle">
+                            <label style="font-size: 18px;font-weight: normal;"> IFE and Pro2Pac 2019:What's trending in beverage packaging? </label>
+                        </div>
+                        <div class="Innovabottom">
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /> <label style="font-size: 10px;">21 MAR,2019</label>
+                            <label style="float:right;padding-left: 173px;">  <img src="@(contentpath)/Image/arrow-right.svg" width="30px" height="30px" /> </label>
+                        </div>
+
+                    </div>
+                    <div class="Packagingdetails">
+                        <img src="@(contentpath)/Image/img2.jpg" width="295px;" />
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float:right;">
+                                <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                            </label>
+                        </div>
+                        <div class="InnovationTitle">
+                            <label style="font-size: 18px;font-weight: normal;"> IFE and Pro2Pac 2019:What's trending in beverage packaging? </label>
+                        </div>
+                        <div class="Innovabottom">
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /> <label style="font-size: 10px;">21 MAR,2019</label>
+                            <label style="float:right;padding-left: 173px;">  <img src="@(contentpath)/Image/arrow-right.svg" width="30px" height="30px" /> </label>
+                        </div>
+
+                    </div>
+                    <div class="Packagingdetails" style="margin-right: 0px !important;">
+                        <img src="@(contentpath)/Image/img3.jpg" width="295px;" />
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float:right;">
+                                <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                            </label>
+                        </div>
+                        <div class="InnovationTitle">
+                            <label style="font-size: 18px;font-weight: normal;"> IFE and Pro2Pac 2019:What's trending in beverage packaging? </label>
+                        </div>
+                        <div class="Innovabottom">
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /> <label style="font-size: 10px;">21 MAR,2019</label>
+                            <label style="float:right;padding-left: 173px;">  <img src="@(contentpath)/Image/arrow-right.svg" width="30px" height="30px" /> </label>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="Title" style="margin-top: 13px;">
+                <label class="TopHeading clear" >Latest News</label>
+                <label class="ViewallReports clear">View all news</label>
+            </div>
+
+            <div>
+                <div class="TitleLine"></div>
+                <div class="News">
+                    <img src="@(contentpath)/Image/color-bg.png" width="100%" ; />
+                    <div class="top-rightstar">
+                        <img src="@(contentpath)/Image/starwhite.svg" width="10px" height="10px" />
+                    </div>
+                    <div class="bottom-left">
+                        <label class="subTitle" style="color: white !important;font-size: 8px;font-family: 'latolight' !important;">PAPER & PAPERBOAD</label>
+                        <img src="@(contentpath)/Image/calendarwhite.svg" width="10px" height="10px" style="margin-left: 218px;" /> <label style="font-size: 8px;">21 MAR,2019</label>
+                    </div>
+                    <div class="bottom-leftcontent">
+                        Plastic waste into opportunity:Consumer goods firms
+                        launch Africa Plastics Recycling Alliance
+                    </div>
+                </div>
+
+                <div class="leftnews">
+                    <img src="@(contentpath)/Image/img5.jpg" width="100%" ; />
+                </div>
+
+                <div class="leftnews">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 17px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family: 'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+
+                <div class="leftnews" style="margin-top: 16px !important;">
+                    <img src="@(contentpath)/Image/img6.jpg" width="100%" ; />
+                </div>
+
+                <div class="leftnews" style="float:right !important;margin-top: 16px !important;">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 17px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family:'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="leftnews" style="margin-top: 16px !important;margin-bottom:80px;height:220px !important;">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 20px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family:'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+
+                <div class="leftnews" style="margin-top: 16px !important;margin-bottom:80px;height:220px !important;">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 20px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family:'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+
+                <div class="leftnews" style="margin-top: 16px !important;margin-bottom:80px;height:220px !important;">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 20px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family: 'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+
+                <div class="leftnews" style="margin-top: 16px !important;margin-bottom:80px;height:220px !important;">
+                    <div style="margin: 6px;padding-left: 184px;">
+                        <img src="@(contentpath)/Image/star.svg" width="10px" height="10px" />
+                    </div>
+                    <div>
+                        <lable style="color: #4C4895;" class="subTitle"> BIO-BASED  </lable>
+                        <label class="Reportdate"><img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" /></label>
+                        <label style="font-size: 10px;">21 MAR,2019</label>
+                    </div>
+                    <div style="font-size: 20px;margin-top: 25px;color: #5D5D5D;margin: 10px 14px;font-family: 'latolight';">
+                        Drink the rainbow: Evian reveals virgil abloh limited-edition bottles
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Leftcontainer" id="MyExportpage" style="margin-bottom:110px;">
+        
+            <div class="Title">
+                <label class="TopHeading">My Experts</label>
+                <label class="ViewallReports"> View all Experts</label>
+            </div>
+            <div class="TitleLine"></div>
+            @for(i = 0; i <12; i++)
+            { 
+            <div class="contentdiv Exportdiv">
+                <div class="algincenter margintop">
+                    <img src="@(contentpath)/Image/user2.png" width="55px" height="55px"  />
+                 </div>
+                <div class="algincenter margintop">
+                    <label>Oliver Herrera</label>
+                </div>
+                <div class="margintop">
+                    <label class="viewbox marginright">View Profile </label>
+                    <label class="viewbox" >Unfollow</label>
+                </div>
+                <div class="margintop">
+                    <div class="leftarrow tables"><img src="@(contentpath)/Image/arrow-left.svg" width="8px" height="8px" /></div>
+                    <div class="tables left-content ">
+                       The EU single-use plastic ban: Indusry responses are in 
+                    </div>
+                </div>
+                <div class="margintop">
+                    <div class="leftarrow tables"><img src="@(contentpath)/Image/arrow-left.svg" width="8px" height="8px" /></div>
+                    <div class="tables left-content ">
+                        Black plastics: A farewell tour or is there life after death?
+                    </div>
+                </div>
+                <div class="margintop marginbottom">
+                    <div class="leftarrow tables"><img src="@(contentpath)/Image/arrow-left.svg" width="8px" height="8px" /></div>
+                    <div class="tables left-content ">
+                        Digitally printing on plastic-free coffee cups:Xeikon partners with Kotkamills Oy
+                    </div>
+                </div>
+             </div>
+               
+            }
+           <div style="margin-bottom:50px;"></div>
+            </div>
+
+        <div id="commentspage" class="Leftcontainer" style="width:71% !important">
+            <div class="Title">
+                <label class="TopHeading"> My Comments</label>
+                <select class="topright" id="sortby">
+                    <option style="padding-left:20px;" value="0">Sort By</option>
+                </select>
+
+            </div>
+            <div class="TitleLine"></div>
+            <div>
+                <label class="TopHeading commenttopmargin">Packaging Reports</label>
+            </div>
+                @for (i = 0; i < 2; i++)
+                {
+                    <div class="commentcontentdiv">
+                        <div class="subTitle">
+                            PACKAGING REPORTS
+                            <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" /> </label>
+                        </div>
+                        <div class="ReportsTitle">
+                            CPI UK collaboration looks to cut plastic waste and quicken biodegradability
+                        </div>
+                        <div class="Authordetails">
+                            <label><img src="@(contentpath)/Image/user1.png" width="20px" height="20px" /></label>
+                            <label style="font-size:12px;">Peter  Smichel</label>
+                            <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px;" />
+                            <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            <label style="margin-left: 20px;font-size: 9px;color: #E25304;font-family: 'latoblack';">
+                                <img src="@(contentpath)/Image/my-experts-orange.svg" width="15px" height="15px" style="margin-right: 5px;margin-top: -5px;" />
+                                22 EXPERT COMMENR(S)
+                            </label>
+                        </div>
+                    </div>
+                    for (j = 0; j < 2; j++)
+                    {
+                        <div class="user-comment">
+                            <div class="userimagediv">
+                                <div style="float:left;"><img src="@(contentpath)/Image/userprofile.png" width="50px" height="50px" /></div>
+                                <div class="userdetails">
+                                    <label class="text-algin">User :</label>
+                                    <label class="text-algin">James Meyer</label>
+                                </div>
+                            </div>
+                            <div class="commentmsgdiv">
+                                <label style="color:#9C9C9C;font-size: 8px;">APR 04 2019</label>
+                                <label>
+                                    Lorem mum &kir so ernes consecmto adipscmg eI& sed do musmcd tempor
+                                    Lnciddiett ut laboro et dare magNi aqua vac runt itd vellt dermsen
+                                    scdeles ut Cu sern Ar birps cameos maecenes pheretra. Elerfeed donee
+                                    prevum vuleNtate semen. Sed adiniscmg dam donee edimiscing.
+                                </label>
+                            </div>
+                        </div>
+                    }
+                }
+           
+            <div class="clear">
+                <label class="TopHeading commenttopmargin">Categories</label>
+            </div>
+                @for (i = 1; i <= 2; i++)
+            {
+                    <div class="commentcontentdiv">
+                        <label style="float: right;"><img src="@(contentpath)/Image/star.svg" width="10px" height="10px" style="margin-top:-16px;" /> </label>
+                        <div class="subTitle">
+                            BIODEGADABLE
+                            
+                            <label style="float:right;margin-right: 15px;">
+                                <img src="@(contentpath)/Image/calendar.svg" width="10px" height="10px" style="margin-left: 9px; " />
+                                <label style="color:#9C9C9C;font-size: 8px;">21 MAR,2019</label>
+                            </label>
+                        </div>
+                        <div class="categorieTitle">
+                            Weekly rondup: SIG targets Asian market with new china Tech Centre Singapore
+                            researchers convert durian husk into biodegradable packaging
+                        </div>
+
+                    </div>
+                    for (j = 0; j < i; j++)
+                    {
+                        <div class="user-comment">
+                            <div class="userimagediv">
+                                <div style="float:left;"><img src="@(contentpath)/Image/userprofile.png" width="50px" height="50px" /></div>
+                                <div class="userdetails">
+                                    <label class="text-algin">User :</label>
+                                    <label class="text-algin">James Meyer</label>
+                                </div>
+                            </div>
+                            <div class="commentmsgdiv">
+                                <label style="color:#9C9C9C;font-size: 8px;">APR 04 2019</label>
+                                <label>
+                                    Lorem mum &kir so ernes consecmto adipscmg eI& sed do musmcd tempor
+                                    Lnciddiett ut laboro et dare magNi aqua vac runt itd vellt dermsen
+                                    scdeles ut Cu sern Ar birps cameos maecenes pheretra. Elerfeed donee
+                                    prevum vuleNtate semen. Sed adiniscmg dam donee edimiscing.
+                                </label>
+                            </div>
+                        </div>
+                    }
+                }
+          
+        </div>
+           
+                @{
+                Html.RenderPartial("~/Views/Shared/Rightcontent.cshtml");
+                }
+
+            
+        </div> 
+
+</body>
+</html>
+
+    
+
+

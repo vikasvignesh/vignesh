@@ -1,0 +1,156 @@
+﻿@using PackagingInsightPremium.Models
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string contentpath = System.Configuration.ConfigurationManager.AppSettings["ContentPath"] != null ? System.Configuration.ConfigurationManager.AppSettings["ContentPath"].ToString() : string.Empty;
+}
+
+<html>
+<head>
+    <title>Packaging Insights</title>
+    <link href="@(contentpath)/css/Common.css" rel="stylesheet" type="text/css" />
+    <script src="@(contentpath)/Js/jquery-1.10.2.js"></script>
+    <link href="@(contentpath)/css/stylesheet.css" rel="stylesheet" />
+    <link href="@(contentpath)/css/Event.css" rel="stylesheet" type="text/css" />
+    <link href="@(contentpath)/css/Home.css" rel="stylesheet" />
+    </head>
+<body>
+    <div class="font maincontentbody">
+    <div id="container">
+        <div class="Leftcontainer">
+            @*Event Year*@
+            <div class="fleft">
+                <div class="column" style="float: left;">
+                   
+                    <label class="TopHeading"> Events</label>
+                        <div class="TitleLine">
+                    </div>
+                </div>
+                <div class="column arr">
+                    <div class="card">
+                        <label > Past Event</label>
+                    </div>
+                </div>
+                <div class="column arr">
+                    <div class="card">
+                        <label> 2019 Events </label>
+                    </div>
+                </div>
+                <div class="column arr">
+                    <div class="card">
+                        <label> 2020 Events</label>
+                    </div>
+                </div>
+               
+                </div>
+            <div class="clear"></div>
+@foreach (Event eve in ViewBag.orgevent)
+{
+            <div class="row">
+
+                <div class="col-md-3 dt">
+                    <div class="lblock">
+                        <div class="date">
+                            <div class="month">Mar</div>
+                            <div class="day">26</div>
+                            <div class="lightline">
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                <div class="col-md-9 dt">
+                    
+                        
+                            @*<div class="evn">*@
+                                <div class="rblock">
+                                    <div class="dtitle">
+                                        Pack Africa Exhibition
+                                    </div>
+                                    @*<div class="rTable">
+                                            <div class="rTableRow">
+                                                <div class="rTableCellwidth">DURATION</div>
+                                                <div class="rTableCell">0123 456 785</div>
+                                            </div>
+                                            <div class="rTableRow">
+                                                <div class="rTableCellwidth ">ORGANIZER</div>
+                                                <div class="rTableCell">9876 532 432</div>
+                                            </div>
+                                            <div class="rTableRow">
+                                                <div class="rTableCellwidth">LOCATION</div>
+                                                <div class="rTableCell">9876 532 432</div>
+                                            </div>
+                                            <div class="rTableRow">
+                                                <div class="rTableCellwidth">EMAIL</div>
+                                                <div class="rTableCell">9876 532 432</div>
+                                            </div>
+                                            <div class="rTableRow">
+                                                <div class="rTableCellwidth">EVENT DETAILS</div>
+                                                <div class="rTableCell">9876 532 432</div>
+                                            </div>
+                                        </div>*@
+
+                                    <div class="row rwidth">
+                                        <div class="col-lg-3 lcell fnt">
+                                            DURATION :
+                                        </div>
+                                        <div class="col-lg-7 fnt">
+                                            @eve.Duration
+                                        </div>
+                                    </div>
+                                    <div class="row rwidth">
+                                        <div class="col-lg-3 lcell fnt">
+                                            ORGANIZER :
+                                        </div>
+                                        <div class="col-lg-7 fnt">
+                                            @eve.Organizer
+                                        </div>
+                                    </div>
+                                    <div class="row rwidth">
+                                        <div class="col-lg-3 lcell fnt">
+                                            LOCATION :
+                                        </div>
+                                        <div class="col-lg-7 fnt">
+                                            @eve.Location
+                                        </div>
+                                    </div>
+                                    <div class="row rwidth">
+                                        <div class="col-lg-3 lcell fnt">
+                                            EMAIL :
+                                        </div>
+                                        <div class="col-lg-7 fnt">
+                                            <span class="email"> @eve.Email</span>
+                                        </div>
+                                    </div>
+                                    <div class="row rwidth">
+                                        <div class="col-lg-3 lcell fnt">
+                                            EVENT DETAILS :
+                                        </div>
+                                        <div class="col-lg-7 fnt">
+                                            @eve.EvenDetail
+                                        </div>
+                                    </div>
+
+                                    <div class="readmore">
+                                        <label class="ViewallReports"> View all Reports</label>
+                                    </div>
+                                </div>
+                            
+                       
+                            </div>
+
+               
+                </div>
+}
+            
+                </div>
+        @{
+            Html.RenderPartial("~/Views/Shared/Rightcontent.cshtml");
+        }
+
+            </div>
+         </div>
+        
+    </body>
+</html>
+

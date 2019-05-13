@@ -1,0 +1,347 @@
+﻿#container
+{
+    padding-top: 45px;
+    background-color: #F9F9F9;
+    /* width: 116px; */
+    width: 100%;
+   /* min-width: 1226px;*/
+    margin: auto;
+    height: auto;
+    min-width:1349px;
+    max-width:100%;
+}
+
+#maincontainer{
+      width: 96%;
+    display: block;
+    margin: auto;
+}
+   
+    .rightcontainer
+    {
+       float: right;
+    width: 23%;
+    height: 25%;
+    /*margin: 10px;*/
+   /*margin-right: 28px;*/ 
+   margin-right: 8px;
+  
+        }
+    .leftTitle
+    {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    }
+   
+    .DailyReportsdetails
+    {
+        height:20%;
+    }
+    .contentdiv
+    {
+    margin-left: 18px;
+    width: 48%;
+    float: left;
+    background-color: #FFFFFF;
+    margin-top: 27px;
+    padding: 10px 18px;
+    }
+
+    .subTitle
+    {
+    color: #4A4693;
+    font-weight: bold;
+    font-size: 9px;
+    margin: 10px 14px;
+    font-family: 'latoblack' !important;
+    }
+    .ReportsTitle
+    {
+    color:#666491;
+    font-size: 24px;
+    font-family: 'latolight' !important;
+    margin: 10px 14px;
+    line-height: 1;
+    }
+    .Authordetais
+    {
+       margin: 21px 13px 14px;
+    }
+    .Homeoption
+    {
+       /* padding:4px;*/
+       padding-bottom: 7px;
+        margin-top: 5px;
+        font-family: 'latolight' !important;
+        cursor:pointer;
+    }
+    .Experts-line{
+            width: 265px;
+    border-bottom: 1px solid #E2E2E2;
+   /*margin-left: 25px;*/
+    margin-bottom:10px;
+    margin-top: 11px;
+    }
+    .Premiumline
+    {
+    width: 265px;
+    border-bottom: 1px solid #E2E2E2;
+   /*margin-left: 25px;*/
+   
+    }
+    .viewallbox
+    {
+    border: 1px solid #4C4895;
+     padding: 7px;
+    color: #4C4895;
+   /* margin-left: 30px;*/
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    align-content: center;
+    font-weight:bold; 
+    margin-top:15px;
+
+    }
+    .Packagingdetails
+    {
+   /* width: 289px;*/
+    width: 295px;
+    float: left;
+    margin-right: 24px;
+    margin-top: 20px;
+    margin-bottom:30px;
+    background-color:white;
+
+    
+    
+    }
+    .InnovationTitle
+    {   
+    color: #676767;
+    margin-left: 13px;
+    font-family: 'latolight' !important;
+    font-size: 17px !important;
+    }
+    .Innovabottom
+    {
+    margin-left: 14px;
+    float: left;
+    margin-top: 5px;
+    }
+.News {
+    
+    float: left;
+    width: 50px;
+    /*height: 70px;*/
+    margin-left: 24px;
+    width: 47%;
+    background-color: #FFFFFF;
+    margin-top: 41px;
+    background-image:url('../Image/img4.jpg');
+    position: relative;
+    background-size: 100%;
+    color: white;
+}
+    .leftnews
+    {
+    
+    width: 215px;
+    height: 160px;
+    float: left;
+    margin-top: 41px;
+    margin-left: 24px;
+    background-color: #FFFFFF;
+    }
+    .clear{
+        clear:both;
+    }
+    .Reportdate
+    {
+        margin-left: 30px;
+    }
+    .arrowleft
+    {
+        float: right;
+        margin-right: 52px;
+        margin-top: 9px;
+    }
+    .leadingexpert
+    {
+        float:right;
+        padding-top:10px;
+        margin-right: 182px;
+        margin-bottom: -9px;
+    }
+    .leadingexpert-margin
+    {
+    margin-left: 37px;
+    margin-top: -65px;
+    }
+    .bottom-left 
+    {
+     position: absolute;
+    bottom: 91px;
+    left: 9px;
+    font-size: 17px;
+    }
+    .bottom-leftcontent
+    {
+      position: absolute;
+    bottom: 44px;
+    left: 22px;
+    font-size: 18px;
+    }
+    .top-rightstar {
+     position: absolute;
+     top: 8px;
+    right: 16px;
+    }
+    .profilebig
+    {
+        position: relative;
+        background:url('../Image/user3.png') no-repeat;
+
+    }
+    .profile
+    {
+      /* position: absolute;
+    bottom: -112px;
+    right: 258px;*/
+      margin-left: -16px;
+    margin-top: 30px;
+    }
+
+    #MyExportpage {
+        display:none;
+    }
+    #commentspage
+    {
+         display:none;
+         margin-bottom:80px;
+    }
+    .Exportdiv
+    {
+        width: 21.8%;
+    float: left;
+    display: inline-block;
+    margin-left: 30px !important;
+       
+    }
+    .algincenter
+    {
+        text-align:center;
+    }
+    .viewbox
+    {
+    border: 1px solid #5A5490;
+    text-align: center;
+    color: #5A5490;
+    font-size: 10px;
+    padding: 5px 17px;
+    cursor: pointer;
+    font-family: 'latolight' !important;
+    }
+    .marginright
+    {
+        margin-right:7px;
+    }
+    .margintop
+    {
+        margin-top:10px;
+    }
+    .marginbottom
+    {
+        margin-bottom:10px;
+    }
+    .leftarrow
+    {
+    
+     float: left;
+     margin-right:8px;
+     margin-top:-4px;
+    }
+    .tables
+    {
+    padding: 0.43%;
+    display: table-cell;
+    vertical-align: middle;
+  
+    }
+    .left-content
+    {
+        font-size: 11px;
+        margin-top:10px;
+        color:#A0A0A0;
+         font-family: 'latolight' !important;
+    }
+    .topright
+    {
+    float: right;
+    width: 15%;
+    text-align: center;
+    font-size: 14px;
+    padding: 7px;
+    cursor:pointer;
+    font-family: 'latolight' !important;
+      border: 1px solid #FFFFFF;
+    }
+    .commenttopmargin
+    {
+        margin-top:25px;
+    }
+    .commentcontentdiv
+    {
+     width:80%;
+     margin-left: 18px;
+    float: right;
+    background-color: #FFFFFF;
+    margin-top: 27px;
+    padding: 10px 18px;
+    }
+    .user-comment
+    {
+     width: 52%;
+    margin-left: 18px;
+    float: right;
+    
+    margin-top: 23px;
+    padding: 10px 18px;
+    }
+    .userimagediv
+    {
+     float:left;
+    }
+    .commentmsgdiv
+    {
+        float: right;
+        width: 261px;
+        margin-top:-5px;
+        font-size:8px;
+    }
+    .userdetails
+    {
+        float: right;
+    margin-top: 6px;
+    margin-left: 7px;
+    width: 85px;
+    font-size: 11px;
+    margin-bottom: 0px !important;
+    color: #A8A8A8;
+    }
+    .text-algin
+    {
+        margin-bottom:0px !important;
+    }
+    .Authordetails
+    {
+        margin: 5px 13px 8px;
+    }
+    .categorieTitle
+    {
+    
+    font-size: 18px;
+   
+    margin: 10px 14px;
+    
+    }

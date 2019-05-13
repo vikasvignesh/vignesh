@@ -1,0 +1,111 @@
+﻿@{
+   string contentpath = System.Configuration.ConfigurationManager.AppSettings["ContentPath"] != null ? System.Configuration.ConfigurationManager.AppSettings["ContentPath"].ToString() : string.Empty;
+}
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <link href="@(contentpath)/css/Common.css" rel="stylesheet" />
+    <link href="@(contentpath)/css/stylesheet.css" rel="stylesheet" />
+    <link href="@(contentpath)/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="@(contentpath)/css/stylesheet.css" rel="stylesheet" />
+    <script src="@(contentpath)/Js/jquery-1.10.2.js"></script>
+    <script src="@(contentpath)/Js/Home.js"></script>
+    <title>Packaging Insights</title>
+</head>
+<body>
+    <div id="Header">
+        <div class="MenuContent">
+            <div class="MennuIcon" > 
+                 <img src="@(contentpath)/Image/Innova_database_color.svg" width="81%"/>
+            </div>
+            <div class="MenuContentList selectmenu" id="Homecontainer">HOME</div>
+            <div class="MenuContentList" id="latestnewscontainer">LATEST NEWS
+
+                <img src="@(contentpath)/Image/arrow-down.svg" width="10px" height="10px" style="padding-left:3px;" />
+              
+            </div>
+            <div class="MenuContentList" id="trendscontainer">TRENDS & INSIGHT
+                <img src="@(contentpath)/Image/arrow-down.svg" width="10px" height="10px" style="padding-left:3px;" />
+            
+            </div>
+            <div class="MenuContentList" id="innovationscontainer">PACKAGING INNOVATIONS </div>
+            <div class="MenuContentList" id="supplierscontainer">PACKAGING SUPPLIERS</div>
+            <div class="MenuContentList" id="eventscontainer">EVENTS</div>
+            <div class="logindetails loginname" >JAMES MEYER </div>
+            <div class="loginname"><label class="toplogin">PREMIUM</label></div>
+
+        </div>
+        <div style="width: auto;border-bottom: 3px solid #5AC8EB;padding-top: 50px;">
+
+        </div>
+
+        <div class="ExpertSearch" style="padding-top:35px;">
+            <select class="" id="myexperts">
+                <option style="padding-left:20px;" value="0">My Experts</option>
+            </select>
+            <input class="MenuInput" id="KeywordExport" type="text" placeholder="Search Keyword(s)" name="Keyword">
+            <input type="button" class="HomeSearch" value="SEARCH" style="color:wheat;"/>
+
+        </div>
+        <div class="Materialsearch" style="padding-top:35px;">
+        <select class="" id="Materials">
+            <option style="padding-left:20px;" value="0">All Materials</option>
+        </select>
+        <input class="MenuInput" id="Keyword" type="text" placeholder="Search Keyword(s)" name="Keyword">
+        <input type="button" class="HomeSearch" value="SEARCH" style="color:wheat;" />
+
+       </div>
+        <div class="popularsearchtab" style="padding-top:8px;">
+         <div class="popularsearch">Popular Searches</div>
+           <div class="btnn">Trends</div>
+          <div class="btnn">2019</div>
+         <div class="btnn">Packaging</div>
+         <div class="btnn">Sustainability</div>
+        <div class="btnn">Plastics</div>
+        <div class="btnn">Recycling</div>
+        <div class="btnn">Enviroment</div>
+        <div class="btnn">Sustainability</div>
+      </div>
+       <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="maincontentbody" class="font maincontentbody">
+        @RenderBody()
+    </div>
+    <div class="font footer" style="float:left">
+        <div class="hn-line"></div>
+        <footer>
+            <div class="footpad">
+                <p>
+                    Packaginginsights.com is edited and hosted by CNS Media BV,Arnhem,The Netherlands The leading international
+                    publisher on food ingredients and food product development.
+                </p>
+                </div>
+              <div class="menulist">
+                <div class="footermenu" >HOME </div>
+                <div class="pipe">|</div>
+                <div class="footermenu" >ABOUTUS </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">CONTACTUS </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">ADVERTISING </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">TWo FI SUBSCRIPTION </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">FIF </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">NI </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">MOBILE VERSION </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">SITEMAP </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">REFER THIS SITE </div>
+                  <div class="pipe">|</div>
+                <div class="footermenu">PRIVACY & COOKIE POLICY </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

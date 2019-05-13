@@ -1,0 +1,271 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+    font-family:'latolight'
+}
+body{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;
+    display: block;
+    margin: 0px !important;
+   /* font-family:'latoregular';*/
+    font-family:'latolight'
+}
+
+.maincontentbody
+{
+    margin:auto;
+    width: 100%;
+    float: left;
+    background-color: #F9F9F9;
+}
+#Header {
+    background: url('../Image/header-bg.jpg') ;
+    top: 0;
+   /* z-index: 1;
+    position:absolute;*/
+    width: 100%;
+    height: 222px;
+    min-width:1349px;
+    background-size:100% 100%;
+
+}
+
+.TopHeading
+{
+font-size:28px;
+margin-left: 25px;
+font-weight:normal;
+font-family: 'latoblack' !important;
+}
+.TitleLine
+    {
+     width: 63px;
+    border-bottom: 4px solid #5AC8EB;
+    margin-left: 25px;
+    margin-top: -8px;
+    }
+ .Leftcontainer
+    {
+       
+       width: 71%;
+        margin-left: 25px;
+        float:left;
+        background: #F9F9F9;
+    }
+
+.ViewallReports
+{
+  
+float: right;
+border: 1px solid #5A5490;
+width: 23%;
+text-align: center;
+color:#5A5490;
+/* color: #4A4893;*/
+font-size: 14px;
+padding: 7px;
+cursor:pointer;
+font-family: 'latolight' !important;
+}
+
+.MenuContent
+{
+    margin: 0px auto;
+    
+}
+  .clear{
+        clear:both;
+    }
+ .MenuContentList {
+    float: left;
+    padding: 18px 12px 18px 12px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #F1F1FC;
+    margin-right: 26px;
+    font-family:'latolight' !important;
+  }
+ .selectmenu
+ {
+      background-color:#5AC8EB;  
+       color:white;
+       
+ }
+ .MennuIcon
+ {
+    float:left;
+    color:white;
+    padding-left: 3%;
+    padding-top: 15px;
+  
+ }
+.MenuContentList:hover {
+       background-color:#5AC8EB;  
+       color:white;
+       cursor:pointer;
+      
+}
+
+.MenuContentList a {
+    
+    cursor: pointer;
+    color: white;
+}
+.logindetails
+{
+padding: 15px 48px 19px 12px;
+background-color: #312D7A;
+}
+.loginname
+{
+  
+ font-size: 11px;
+ color: #F1F1FC;
+ float:right;
+
+}
+#Materials
+{
+    width: 17%;
+   height: 45px;
+    MARGIN-LEFT: 19%;
+    padding-left: 20px;
+    border-color:white;
+    border-radius: 0px;
+    margin-top:-4px;
+    margin-right: 5px;
+    font-weight:bold;
+    font-size:12px;
+    
+}
+#myexperts
+{
+    width: 17%;
+   height: 45px;
+   margin-left:37px;
+   border-color:white;
+    border-radius: 0px;
+    margin-top:-4px;
+    margin-right: 5px;
+    font-weight:bold;
+    font-size:12px;
+    padding: 0px 65px;
+}   
+
+#Keyword
+{
+    width: 30%;
+    height: 45px;
+    background: url(https://assets.innovadatabase.com/infspc/Images/home_search.png) no-repeat;
+    background-color: white;
+    padding-left: 4%;
+    background-position: 6.5% 50%;
+    border: transparent !important;
+    background-size: 12px;
+    margin-right: 5px;
+   
+}
+#KeywordExport
+{
+     width: 61.8%;
+    height: 45px;
+    background: url(https://assets.innovadatabase.com/infspc/Images/home_search.png) no-repeat;
+    background-color: white;
+    padding-left: 4%;
+    background-position: 4.5% 50%;
+    border: transparent !important;
+    background-size: 12px;
+    margin-right: 5px;
+}
+.ExpertSearch
+{
+    display:none;
+}
+
+.HomeSearch
+{
+    width: 14%;
+    height: 45px;
+    background-color: #E25304;
+    border: #E25304;
+    color: white;
+    cursor:pointer;
+  
+}
+
+.footer
+{    
+    color: gray;
+    font-size: 14px;
+    margin: auto;
+    background-color: #353535;
+    text-align: center;
+    width:100%;
+    height:120px;
+    min-width:1349px;
+}
+.footpad
+{
+    font-family: 'latolight';
+    font-size: 10px;
+    padding: 0px 32%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:black;
+    font-size:12px;
+    font-weight:bold;
+}
+.toplogin
+{
+    color: #E25304;
+    /* padding: 20px 12px 21px 12px; */
+    /* margin: 16px; */
+    margin-tio: 21px;
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 24px;
+    font-size: 9px;
+}
+.footermenu
+{
+   float: left;
+   font-size: 9px;
+  
+    
+}
+.menulist
+{
+     padding: 0px 20%;
+     cursor:pointer;
+}
+.pipe{
+    text-align: center;
+    float: left;
+    margin-top: -4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.popularsearch {
+    float: left;
+    margin-left: 19%;
+    color:#F2F1FA;
+    margin-top: 10px;
+    font-size: 11px;
+}
+.btnn
+{
+   padding: 3px 8px 3px 8px;
+   background-color: #413D79;
+    margin-left: 10px;
+    color: #7976B9;
+    float: left;
+    margin-top: 8px;
+    font-size: 10px;
+    cursor:pointer;
+}
